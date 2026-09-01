@@ -28,10 +28,10 @@ The shared handoff makes the curriculum cumulative: students inspect the data on
 
 | Module | Focus | Input -> output | Notebook | Presentation |
 | --- | --- | --- | --- | --- |
-| **M1** | ED exploration and preparation | Private master dataset -> cleaned handoff | [Notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View PDF](presentations/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [PPTX](presentations/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
-| **M2** | Emergency-department length of stay | M1 handoff -> LOS summaries and baseline models | [Notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [View PDF](presentations/02_M2_ED_Length_of_Stay_Overview.pdf) · [PPTX](presentations/02_M2_ED_Length_of_Stay_Overview.pptx) |
-| **M3** | Critical clinical outcome | M1 handoff -> grouped classification and sampling comparison | [Notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [View PDF](presentations/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [PPTX](presentations/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
-| **M4** | Hospitalization and explainability | M1 handoff -> calibrated evaluation, importance, and SHAP | [Notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [View PDF](presentations/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [PPTX](presentations/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
+| **M1** | ED exploration and preparation | Private master dataset -> cleaned handoff | [Notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View PDF](presentations/pdf/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [Download PPTX](presentations/pptx/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
+| **M2** | Emergency-department length of stay | M1 handoff -> LOS summaries and baseline models | [Notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [View PDF](presentations/pdf/02_M2_ED_Length_of_Stay_Overview.pdf) · [Download PPTX](presentations/pptx/02_M2_ED_Length_of_Stay_Overview.pptx) |
+| **M3** | Critical clinical outcome | M1 handoff -> grouped classification and sampling comparison | [Notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [View PDF](presentations/pdf/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [Download PPTX](presentations/pptx/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
+| **M4** | Hospitalization and explainability | M1 handoff -> calibrated evaluation, importance, and SHAP | [Notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [View PDF](presentations/pdf/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [Download PPTX](presentations/pptx/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
 
 Run M1 first. M2, M3, and M4 all consume `outputs/M1_dataset_for_next_module.csv`.
 
@@ -52,7 +52,8 @@ Data in a user-controlled Google Colab runtime cannot be made absolutely non-dow
 ## Repository map
 
 - `notebooks/`: the four executable curriculum notebooks.
-- `presentations/`: the four current-evidence teaching decks.
+- `presentations/pdf/`: browser-viewable PDF versions of the four teaching decks.
+- `presentations/pptx/`: original PowerPoint files for download and editing.
 - `data/`: documentation only; private data is ignored by Git.
 - `outputs/`: documentation only; generated handoffs and analysis tables are ignored by Git.
 - `docs/`: setup, data-access, Colab, and teaching-sequence guidance.
