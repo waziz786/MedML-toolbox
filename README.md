@@ -18,36 +18,9 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 
 ## Learning path
 
-```text
-               MEDML TOOLBOX
+![MedML Toolbox learning path](docs/learning-path.svg)
 
-          +--------------------------+
-          | 01  PRIVATE MASTER DATA  |
-          |     authorized CSV       |
-          +------------+-------------+
-             |
-             v
-          +--------------------------+
-          | 02  M1  EXPLORE + PREPARE |
-          |     audit, clean, inspect  |
-          +------------+-------------+
-             |
-             v
-          +--------------------------+
-          | HANDOFF  M1 DATASET       |
-          | M1_dataset_for_next_      |
-          | module.csv                 |
-          +-------+----------+---------+
-                |
-          +---------------+---------------+
-          |               |               |
-          v               v               v
-         +-------------------+ +-------------------+ +-------------------+
-         | 03  M2            | | 03  M3            | | 04  M4            |
-         | LENGTH OF STAY    | | CRITICAL OUTCOME  | | HOSPITALIZATION   |
-         |                   | |                   | | + SHAP            |
-         +-------------------+ +-------------------+ +-------------------+
-```
+The handoff is the shared boundary: M1 prepares the private dataset, then M2, M3, and M4 analyze it in parallel.
 
 | Module | Open the notebook | Launch in Colab |
 | --- | --- | --- |

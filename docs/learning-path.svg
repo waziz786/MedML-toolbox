@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" role="img" aria-labelledby="title description">
+  <title id="title">MedML Toolbox learning path</title>
+  <desc id="description">An authorized private master dataset flows through Module 1 into a private handoff dataset, which feeds Modules 2, 3, and 4 in parallel.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17324d" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52738f"/>
+    </marker>
+    <style>
+      .eyebrow { font: 700 16px Arial, sans-serif; letter-spacing: 2px; fill: #52738f; }
+      .title { font: 700 26px Arial, sans-serif; fill: #17324d; }
+      .body { font: 400 17px Arial, sans-serif; fill: #526575; }
+      .module { font: 700 18px Arial, sans-serif; letter-spacing: 1px; fill: #ffffff; }
+      .module-title { font: 700 23px Arial, sans-serif; fill: #17324d; }
+      .module-body { font: 400 16px Arial, sans-serif; fill: #526575; }
+      .connector { stroke: #52738f; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1400" height="620" rx="24" fill="#f6f9fb"/>
+  <path d="M 70 86 H 1330" stroke="#dce7ee" stroke-width="2"/>
+  <text x="70" y="58" class="eyebrow">MEDML TOOLBOX / LEARNING PATH</text>
+  <text x="1330" y="58" text-anchor="end" class="body">One prepared dataset, three clinical questions</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="130" width="270" height="150" rx="16" fill="#e7f4f2" stroke="#8ccbc3" stroke-width="2"/>
+    <rect x="70" y="130" width="270" height="12" rx="6" fill="#238b83"/>
+    <text x="96" y="180" class="eyebrow" fill="#238b83">01 / INPUT</text>
+    <text x="96" y="218" class="title">Private master data</text>
+    <text x="96" y="250" class="body">Authorized CSV</text>
+  </g>
+
+  <path d="M 340 205 H 410" class="connector"/>
+
+  <g filter="url(#shadow)">
+    <rect x="410" y="130" width="300" height="150" rx="16" fill="#eaf1f8" stroke="#9dbbd4" stroke-width="2"/>
+    <rect x="410" y="130" width="300" height="12" rx="6" fill="#28658a"/>
+    <text x="436" y="180" class="eyebrow" fill="#28658a">02 / PREPARE</text>
+    <text x="436" y="218" class="title">M1: Explore + prepare</text>
+    <text x="436" y="250" class="body">Audit, clean, inspect</text>
+  </g>
+
+  <path d="M 710 205 H 780" class="connector"/>
+
+  <g filter="url(#shadow)">
+    <rect x="780" y="130" width="330" height="150" rx="16" fill="#fff4df" stroke="#e7be72" stroke-width="2"/>
+    <rect x="780" y="130" width="330" height="12" rx="6" fill="#c47b16"/>
+    <text x="806" y="180" class="eyebrow" fill="#c47b16">HANDOFF / PRIVATE</text>
+    <text x="806" y="218" class="title">M1 handoff dataset</text>
+    <text x="806" y="250" class="body">M1_dataset_for_next_module.csv</text>
+  </g>
+
+  <path d="M 945 280 V 350" class="connector"/>
+  <path d="M 215 350 H 1165" stroke="#52738f" stroke-width="4" fill="none"/>
+  <path d="M 215 350 V 390" class="connector"/>
+  <path d="M 690 350 V 390" class="connector"/>
+  <path d="M 1165 350 V 390" class="connector"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="390" width="290" height="160" rx="16" fill="#ffffff" stroke="#cbd9e2" stroke-width="2"/>
+    <rect x="70" y="390" width="290" height="44" rx="16" fill="#28658a"/>
+    <rect x="70" y="418" width="290" height="16" fill="#28658a"/>
+    <text x="96" y="420" class="module">03 / M2</text>
+    <text x="96" y="475" class="module-title">Length of stay</text>
+    <text x="96" y="508" class="module-body">Duration, groups, baselines</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="545" y="390" width="290" height="160" rx="16" fill="#ffffff" stroke="#cbd9e2" stroke-width="2"/>
+    <rect x="545" y="390" width="290" height="44" rx="16" fill="#238b83"/>
+    <rect x="545" y="418" width="290" height="16" fill="#238b83"/>
+    <text x="571" y="420" class="module">03 / M3</text>
+    <text x="571" y="475" class="module-title">Critical outcome</text>
+    <text x="571" y="508" class="module-body">Patient-disjoint classification</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1020" y="390" width="290" height="160" rx="16" fill="#ffffff" stroke="#cbd9e2" stroke-width="2"/>
+    <rect x="1020" y="390" width="290" height="44" rx="16" fill="#c47b16"/>
+    <rect x="1020" y="418" width="290" height="16" fill="#c47b16"/>
+    <text x="1046" y="420" class="module">04 / M4</text>
+    <text x="1046" y="475" class="module-title">Hospitalization</text>
+    <text x="1046" y="508" class="module-body">Calibration, importance, SHAP</text>
+  </g>
+</svg>
