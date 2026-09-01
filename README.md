@@ -18,14 +18,11 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 
 ## Learning path
 
-```mermaid
-flowchart LR
-   A["Authorized private master dataset"] --> B["M1: Explore and prepare"]
-   B --> H["Private M1 handoff"]
-   H --> C["M2: Length of stay"]
-   H --> D["M3: Critical outcome"]
-   H --> E["M4: Hospitalization and SHAP"]
-```
+| 1. Private data | 2. Prepare | Handoff | 3. Analyze | 4. Explain |
+| --- | --- | --- | --- | --- |
+| Authorized master dataset | [M1: Explore and prepare](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | `M1_dataset_for_next_module.csv` | [M2: Length of stay](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb)<br>[M3: Critical outcome](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [M4: Hospitalization and SHAP](notebooks/04_M4_Hospitalization_Analysis.ipynb) |
+
+**Sequence:** `Private master dataset` -> **M1** -> `M1_dataset_for_next_module.csv` -> **M2 / M3 / M4**
 
 The shared handoff makes the curriculum cumulative: students inspect the data once in M1, then reuse the same prepared patient-stay table to compare questions, targets, evaluation strategies, and explanations.
 
