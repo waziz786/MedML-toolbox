@@ -6,12 +6,6 @@
 
 **Start here:** [run locally](docs/local_setup.md) | [use Colab](docs/colab.md) | [review data access](docs/data_access.md) | [follow the teaching sequence](docs/teaching_sequence.md)
 
-### Launch a module in Google Colab
-
-| M1 | M2 | M3 | M4 |
-| --- | --- | --- | --- |
-| [![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [![Open M2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [![Open M3 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [![Open M4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
-
 This repository is a student-facing curriculum for exploring emergency-department data and building interpretable machine-learning baselines. It contains the current Module 1 through Module 4 notebooks and the matching presentation decks.
 
 > **Privacy first:** The authorized MIMIC-IV-derived dataset and all generated row-level outputs stay outside GitHub. This repository contains the learning materials and reproducibility guidance only.
@@ -42,6 +36,12 @@ Run M1 first. M2, M3, and M4 all consume `outputs/M1_dataset_for_next_module.csv
 | **Local** | Full control over the environment and private files | [Create an environment](docs/local_setup.md) |
 | **Google Colab** | Fast setup or managed compute | [Mount private Drive data](docs/colab.md) |
 | **Teaching mode** | Guided classroom discussion | [Use the sequence guide](docs/teaching_sequence.md) |
+
+### Launch a module in Google Colab
+
+| M1 | M2 | M3 | M4 |
+| --- | --- | --- | --- |
+| [![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [![Open M2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [![Open M3 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [![Open M4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
 
 ## Data policy
 
