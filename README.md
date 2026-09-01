@@ -18,7 +18,7 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 
 ## Learning path
 
-![MedML Toolbox learning path](docs/learning-path.svg)
+![MedML Toolbox learning path](docs/learning-path-v2.svg)
 
 The handoff is the shared boundary: M1 prepares the private dataset, then M2, M3, and M4 analyze it in parallel.
 
