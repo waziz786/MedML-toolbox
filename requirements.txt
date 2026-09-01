@@ -1,0 +1,10 @@
+jupyterlab>=4.3
+notebook>=7.3
+ipykernel>=6.29
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+imbalanced-learn>=0.12
+matplotlib>=3.8
+seaborn>=0.13
+shap>=0.44

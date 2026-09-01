@@ -1,0 +1,27 @@
+# Private source data and derived row-level data
+data/*
+!data/README.md
+outputs/*
+!outputs/README.md
+
+# Notebook and Python runtime files
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+~$*.pptx

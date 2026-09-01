@@ -1,0 +1,36 @@
+name: Validate teaching artifacts
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  notebooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate notebook structure and Python syntax
+        run: |
+          python - <<'PY'
+          import ast
+          import json
+          from pathlib import Path
+
+          notebooks = sorted(Path("notebooks").glob("*.ipynb"))
+          assert len(notebooks) == 4, f"Expected four notebooks, found {len(notebooks)}"
+          for notebook_path in notebooks:
+              notebook = json.loads(notebook_path.read_text(encoding="utf-8"))
+              ids = []
+              for cell in notebook["cells"]:
+                  assert cell.get("metadata", {}).get("language"), notebook_path
+                  cell_id = cell.get("metadata", {}).get("id")
+                  assert cell_id and cell_id not in ids, notebook_path
+                  ids.append(cell_id)
+                  if cell["cell_type"] == "code":
+                      assert not cell.get("outputs"), notebook_path
+                      ast.parse("".join(cell.get("source", [])), filename=str(notebook_path))
+          print(f"Validated {len(notebooks)} notebooks")
+          PY
