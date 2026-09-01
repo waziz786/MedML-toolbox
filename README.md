@@ -18,9 +18,41 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 
 ## Learning path
 
-| 1. Private data | 2. Prepare | Handoff | 3. Analyze | 4. Explain |
-| --- | --- | --- | --- | --- |
-| Authorized master dataset | [M1: Explore and prepare](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | `M1_dataset_for_next_module.csv` | [M2: Length of stay](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb)<br>[M3: Critical outcome](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [M4: Hospitalization and SHAP](notebooks/04_M4_Hospitalization_Analysis.ipynb) |
+```text
+             MEDML TOOLBOX
+
+      +---------------------------+
+      | 1  PRIVATE MASTER DATA    |
+      |    authorized CSV         |
+      +-------------+-------------+
+            |
+            v
+      +---------------------------+
+      | 2  M1  EXPLORE + PREPARE  |
+      |    audit, clean, inspect   |
+      +-------------+-------------+
+            |
+            v
+      +---------------------------+
+      | PRIVATE M1 HANDOFF        |
+      | M1_dataset_for_next_      |
+      | module.csv                 |
+      +------+------+------+------+
+         |      |      |
+         v      v      v
+      +----------+  +---+------+  +----------+
+      | 3  M2    |  | 3  M3   |  | 4  M4    |
+      | LENGTH   |  | CRITICAL|  | HOSPITAL |
+      | OF STAY  |  | OUTCOME |  | + SHAP   |
+      +----------+  +---------+  +----------+
+```
+
+| Module | Open the notebook | Launch in Colab |
+| --- | --- | --- |
+| **M1** Explore and prepare | [Notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [Open M1 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) |
+| **M2** Length of stay | [Notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [Open M2 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) |
+| **M3** Critical outcome | [Notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [Open M3 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) |
+| **M4** Hospitalization and SHAP | [Notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [Open M4 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
 
 **Sequence:** `Private master dataset` -> **M1** -> `M1_dataset_for_next_module.csv` -> **M2 / M3 / M4**
 
