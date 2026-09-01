@@ -3,7 +3,7 @@
 ### A guided, evidence-first machine-learning curriculum for emergency-department data
 
 [![Validate teaching artifacts](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml/badge.svg)](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+[![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb)
 
 **Start here:** [run locally](docs/local_setup.md) | [use Colab](docs/colab.md) | [review data access](docs/data_access.md) | [follow the teaching sequence](docs/teaching_sequence.md)
 
@@ -28,12 +28,12 @@ The shared handoff makes the curriculum cumulative: students inspect the data on
 
 | Module | Focus | Input | Main result |
 | --- | --- | --- | --- |
-| Module | Focus | Input | Main result | Notebook | Presentation |
-| --- | --- | --- | --- | --- | --- |
-| M1 | MIMIC-IV ED exploration and preparation | Authorized private master dataset | Cleaned handoff dataset | [Open notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View deck](presentations/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
-| M2 | Emergency-department length of stay | M1 handoff | LOS summaries and baseline models | [Open notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [View deck](presentations/02_M2_ED_Length_of_Stay_Overview.pptx) |
-| M3 | Critical clinical outcome | M1 handoff | Group-aware classification and sampling comparison | [Open notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [View deck](presentations/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
-| M4 | Hospitalization outcome and explainability | M1 handoff | Evaluation, calibration, importance, and SHAP explanations | [Open notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [View deck](presentations/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
+| Module | Focus | Input | Main result | Notebook | Colab | Presentation |
+| --- | --- | --- | --- | --- | --- | --- |
+| M1 | MIMIC-IV ED exploration and preparation | Authorized private master dataset | Cleaned handoff dataset | [Open notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [Open in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View deck](presentations/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
+| M2 | Emergency-department length of stay | M1 handoff | LOS summaries and baseline models | [Open notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [Open in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [View deck](presentations/02_M2_ED_Length_of_Stay_Overview.pptx) |
+| M3 | Critical clinical outcome | M1 handoff | Group-aware classification and sampling comparison | [Open notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [Open in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [View deck](presentations/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
+| M4 | Hospitalization outcome and explainability | M1 handoff | Evaluation, calibration, importance, and SHAP explanations | [Open notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [Open in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) | [View deck](presentations/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
 
 Run M1 first. M2, M3, and M4 all consume `outputs/M1_dataset_for_next_module.csv`.
 
