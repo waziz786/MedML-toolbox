@@ -22,15 +22,6 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 
 The handoff is the shared boundary: M1 prepares the private dataset, then M2, M3, and M4 analyze it in parallel.
 
-| Module | Open the notebook | Launch in Colab |
-| --- | --- | --- |
-| **M1** Explore and prepare | [Notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [Open M1 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) |
-| **M2** Length of stay | [Notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [Open M2 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) |
-| **M3** Critical outcome | [Notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [Open M3 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) |
-| **M4** Hospitalization and SHAP | [Notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [Open M4 in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
-
-**Sequence:** `Private master dataset` -> **M1** -> `M1_dataset_for_next_module.csv` -> **M2 / M3 / M4**
-
 The shared handoff makes the curriculum cumulative: students inspect the data once in M1, then reuse the same prepared patient-stay table to compare questions, targets, evaluation strategies, and explanations.
 
 ## Module sequence
