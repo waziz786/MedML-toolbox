@@ -19,32 +19,34 @@ This repository is a student-facing curriculum for exploring emergency-departmen
 ## Learning path
 
 ```text
-             MEDML TOOLBOX
+               MEDML TOOLBOX
 
-      +---------------------------+
-      | 1  PRIVATE MASTER DATA    |
-      |    authorized CSV         |
-      +-------------+-------------+
-            |
-            v
-      +---------------------------+
-      | 2  M1  EXPLORE + PREPARE  |
-      |    audit, clean, inspect   |
-      +-------------+-------------+
-            |
-            v
-      +---------------------------+
-      | PRIVATE M1 HANDOFF        |
-      | M1_dataset_for_next_      |
-      | module.csv                 |
-      +------+------+------+------+
-         |      |      |
-         v      v      v
-      +----------+  +---+------+  +----------+
-      | 3  M2    |  | 3  M3   |  | 4  M4    |
-      | LENGTH   |  | CRITICAL|  | HOSPITAL |
-      | OF STAY  |  | OUTCOME |  | + SHAP   |
-      +----------+  +---------+  +----------+
+          +--------------------------+
+          | 01  PRIVATE MASTER DATA  |
+          |     authorized CSV       |
+          +------------+-------------+
+             |
+             v
+          +--------------------------+
+          | 02  M1  EXPLORE + PREPARE |
+          |     audit, clean, inspect  |
+          +------------+-------------+
+             |
+             v
+          +--------------------------+
+          | HANDOFF  M1 DATASET       |
+          | M1_dataset_for_next_      |
+          | module.csv                 |
+          +-------+----------+---------+
+                |
+          +---------------+---------------+
+          |               |               |
+          v               v               v
+         +-------------------+ +-------------------+ +-------------------+
+         | 03  M2            | | 03  M3            | | 04  M4            |
+         | LENGTH OF STAY    | | CRITICAL OUTCOME  | | HOSPITALIZATION   |
+         |                   | |                   | | + SHAP            |
+         +-------------------+ +-------------------+ +-------------------+
 ```
 
 | Module | Open the notebook | Launch in Colab |
