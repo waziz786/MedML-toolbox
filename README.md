@@ -3,9 +3,14 @@
 ### A guided, evidence-first machine-learning curriculum for emergency-department data
 
 [![Validate teaching artifacts](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml/badge.svg)](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml)
-[![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb)
 
 **Start here:** [run locally](docs/local_setup.md) | [use Colab](docs/colab.md) | [review data access](docs/data_access.md) | [follow the teaching sequence](docs/teaching_sequence.md)
+
+### Launch a module in Google Colab
+
+| M1 | M2 | M3 | M4 |
+| --- | --- | --- | --- |
+| [![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [![Open M2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [![Open M3 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [![Open M4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
 
 This repository is a student-facing curriculum for exploring emergency-department data and building interpretable machine-learning baselines. It contains the current Module 1 through Module 4 notebooks and the matching presentation decks.
 
@@ -26,8 +31,6 @@ The shared handoff makes the curriculum cumulative: students inspect the data on
 
 ## Module sequence
 
-| Module | Focus | Input | Main result |
-| --- | --- | --- | --- |
 | Module | Focus | Input | Main result | Notebook | Colab | Presentation |
 | --- | --- | --- | --- | --- | --- | --- |
 | M1 | MIMIC-IV ED exploration and preparation | Authorized private master dataset | Cleaned handoff dataset | [Open notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [Open in Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View deck](presentations/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
