@@ -71,7 +71,7 @@
     <rect x="545" y="390" width="290" height="160" rx="16" fill="#ffffff" stroke="#cbd9e2" stroke-width="2"/>
     <rect x="545" y="390" width="290" height="44" rx="16" fill="#238b83"/>
     <rect x="545" y="418" width="290" height="16" fill="#238b83"/>
-    <text x="571" y="420" class="module">03 / M3</text>
+    <text x="571" y="420" class="module">04 / M3</text>
     <text x="571" y="475" class="module-title">Critical outcome</text>
     <text x="571" y="508" class="module-body">Patient-disjoint classification</text>
   </g>
@@ -80,7 +80,7 @@
     <rect x="1020" y="390" width="290" height="160" rx="16" fill="#ffffff" stroke="#cbd9e2" stroke-width="2"/>
     <rect x="1020" y="390" width="290" height="44" rx="16" fill="#c47b16"/>
     <rect x="1020" y="418" width="290" height="16" fill="#c47b16"/>
-    <text x="1046" y="420" class="module">04 / M4</text>
+    <text x="1046" y="420" class="module">05 / M4</text>
     <text x="1046" y="475" class="module-title">Hospitalization</text>
     <text x="1046" y="508" class="module-body">Calibration, importance, SHAP</text>
   </g>
