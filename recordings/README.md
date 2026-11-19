@@ -4,13 +4,12 @@ The recordings are the companion materials for the four modules. They are
 stored with Git LFS because each lecture is larger than GitHub's regular
 100 MB file limit.
 
-**Online player:** After enabling GitHub Pages once, use the [recording player](https://waziz786.github.io/MedML-toolbox/). The player source is in [`site/index.html`](../site/index.html).
+**Online player:** Use the [tested browser player](https://raw.githack.com/waziz786/MedML-toolbox/main/site/index.html). The player source is in [`site/index.html`](../site/index.html).
 
-The normal GitHub file page cannot preview these large LFS objects. The online
-player uses GitHub's range-enabled media endpoint so playback can begin without
-downloading the entire lecture. Direct stream links are included as a fallback.
-If the Pages site has not been enabled yet, open the direct stream link in a
-browser media player or VLC.
+The normal GitHub file page cannot preview these large LFS objects. The player
+is a static HTML page rendered by raw.githack and uses GitHub's range-enabled
+media endpoint, so playback can begin without downloading the entire lecture.
+Direct stream links are included as a fallback.
 
 ## M1 - ED data exploration
 

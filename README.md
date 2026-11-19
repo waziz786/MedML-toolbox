@@ -10,7 +10,7 @@ MedML Toolbox is a student-facing curriculum for exploring emergency-department 
 
 > **Privacy first:** The authorized MIMIC-IV-derived dataset, assignment datasets, and generated row-level outputs stay outside GitHub. This repository contains learning materials and reproducibility guidance only.
 
-**Watch online:** [Open the recordings page](https://github.com/waziz786/MedML-toolbox/blob/main/recordings/README.md)
+**Watch online:** [Open the tested browser player](https://raw.githack.com/waziz786/MedML-toolbox/main/site/index.html)
 
 ## A simple route through the course
 

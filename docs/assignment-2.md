@@ -9,7 +9,7 @@ channel approved for the course.
 
 - [Assignment guide and briefing deck (PDF)](../assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pdf)
 - [Editable briefing deck (PPTX)](../assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pptx)
-- [Play the assignment briefing online](../recordings/README.md#assignment-2-briefing)
+- [Play the assignment briefing online](https://raw.githack.com/waziz786/MedML-toolbox/main/site/index.html#assignment-2)
 
 Use the briefing deck as the authoritative source for the exact deliverable
 wording and submission requirements.
