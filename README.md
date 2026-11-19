@@ -10,6 +10,8 @@ MedML Toolbox is a student-facing curriculum for exploring emergency-department 
 
 > **Privacy first:** The authorized MIMIC-IV-derived dataset, assignment datasets, and generated row-level outputs stay outside GitHub. This repository contains learning materials and reproducibility guidance only.
 
+**Watch online:** [Open the lecture player](https://waziz786.github.io/MedML-toolbox/)
+
 ## A simple route through the course
 
 1. Read [data access and privacy guidance](docs/data_access.md).
@@ -26,10 +28,10 @@ M1 prepares the shared private handoff. M2, M3, and M4 reuse that handoff to stu
 
 | Module | Focus | Watch | Notebook | Slides |
 | --- | --- | --- | --- | --- |
-| **M1** | ED exploration and preparation | [Recording](recordings/M1_EHR_MIMIC_IV_ED_Full_Lecture.mp4) | [Open in GitHub](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [PDF](presentations/pdf/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [PPTX](presentations/pptx/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
-| **M2** | Emergency-department length of stay | [Recording](recordings/M2_Full_Lecture.mp4) | [Open in GitHub](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [PDF](presentations/pdf/02_M2_ED_Length_of_Stay_Overview.pdf) · [PPTX](presentations/pptx/02_M2_ED_Length_of_Stay_Overview.pptx) |
-| **M3** | Critical clinical outcome | [Recording](recordings/M3_Full_Lecture.mp4) | [Open in GitHub](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [PDF](presentations/pdf/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
-| **M4** | Hospitalization and explainability | [Recording](recordings/M4_Full_Lecture_Complete.mp4) | [Open in GitHub](notebooks/04_M4_Hospitalization_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) | [PDF](presentations/pdf/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
+| **M1** | ED exploration and preparation | [Play online](https://waziz786.github.io/MedML-toolbox/#m1) | [Open in GitHub](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [PDF](presentations/pdf/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [PPTX](presentations/pptx/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
+| **M2** | Emergency-department length of stay | [Play online](https://waziz786.github.io/MedML-toolbox/#m2) | [Open in GitHub](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [PDF](presentations/pdf/02_M2_ED_Length_of_Stay_Overview.pdf) · [PPTX](presentations/pptx/02_M2_ED_Length_of_Stay_Overview.pptx) |
+| **M3** | Critical clinical outcome | [Play online](https://waziz786.github.io/MedML-toolbox/#m3) | [Open in GitHub](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [PDF](presentations/pdf/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
+| **M4** | Hospitalization and explainability | [Play online](https://waziz786.github.io/MedML-toolbox/#m4) | [Open in GitHub](notebooks/04_M4_Hospitalization_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) | [PDF](presentations/pdf/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
 
 ### Recommended module loop
 
@@ -49,7 +51,7 @@ Assignment 2 is a separate applied project with its own briefing and prediction 
 - [Assignment 2 guide](docs/assignment-2.md)
 - [Briefing deck - PDF](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pdf)
 - [Briefing deck - editable PPTX](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pptx)
-- [Full assignment briefing recording](recordings/assignment-2/Assignment_2_Full_Recording.mp4)
+- [Play the assignment briefing online](https://waziz786.github.io/MedML-toolbox/#assignment-2)
 
 The windowed ICU CSV files are row-level clinical data and are distributed through the approved private course channel. They are intentionally not committed to this public repository.
 
