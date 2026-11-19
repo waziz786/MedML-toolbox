@@ -10,7 +10,7 @@ MedML Toolbox is a student-facing curriculum for exploring emergency-department 
 
 > **Privacy first:** The authorized MIMIC-IV-derived dataset, assignment datasets, and generated row-level outputs stay outside GitHub. This repository contains learning materials and reproducibility guidance only.
 
-**Watch online:** [Open the lecture player](https://waziz786.github.io/MedML-toolbox/)
+**Watch online:** [Open the recordings page](https://github.com/waziz786/MedML-toolbox/blob/main/recordings/README.md)
 
 ## A simple route through the course
 
@@ -51,7 +51,7 @@ Assignment 2 is a separate applied project with its own briefing and prediction 
 - [Assignment 2 guide](docs/assignment-2.md)
 - [Briefing deck - PDF](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pdf)
 - [Briefing deck - editable PPTX](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pptx)
-- [Play the assignment briefing online](https://waziz786.github.io/MedML-toolbox/#assignment-2)
+- [Play the assignment briefing online](https://github.com/waziz786/MedML-toolbox/blob/main/recordings/README.md#assignment-2-briefing)
 
 The windowed ICU CSV files are row-level clinical data and are distributed through the approved private course channel. They are intentionally not committed to this public repository.
 
