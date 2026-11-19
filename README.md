@@ -4,32 +4,56 @@
 
 [![Validate teaching artifacts](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml/badge.svg)](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml)
 
-**Start here:** [run locally](docs/local_setup.md) | [use Colab](docs/colab.md) | [review data access](docs/data_access.md) | [follow the teaching sequence](docs/teaching_sequence.md)
+**Start here:** [choose a setup route](docs/local_setup.md) | [use Colab](docs/colab.md) | [follow the teaching sequence](docs/teaching_sequence.md) | [read the data policy](docs/data_access.md)
 
-This repository is a student-facing curriculum for exploring emergency-department data and building interpretable machine-learning baselines. It contains the current Module 1 through Module 4 notebooks and the matching presentation decks.
+MedML Toolbox is a student-facing curriculum for exploring emergency-department data and building interpretable machine-learning baselines. Each module has a notebook, a presentation, and a full lecture recording so students can choose a read, watch, or run-first route.
 
-> **Privacy first:** The authorized MIMIC-IV-derived dataset and all generated row-level outputs stay outside GitHub. This repository contains the learning materials and reproducibility guidance only.
+> **Privacy first:** The authorized MIMIC-IV-derived dataset, assignment datasets, and generated row-level outputs stay outside GitHub. This repository contains learning materials and reproducibility guidance only.
 
-## Learning path
+## A simple route through the course
+
+1. Read [data access and privacy guidance](docs/data_access.md).
+2. Choose [local execution](docs/local_setup.md) or [Google Colab](docs/colab.md).
+3. Work through M1, M2, M3, and M4 in order.
+4. For each module, preview the deck, watch the recording, then run the notebook.
+5. Continue to the [Assignment 2 guide](docs/assignment-2.md) after M4.
 
 ![MedML Toolbox learning path](docs/learning-path-v2.svg)
 
-The handoff is the shared boundary: M1 prepares the private dataset, then M2, M3, and M4 analyze it in parallel.
+M1 prepares the shared private handoff. M2, M3, and M4 reuse that handoff to study different outcomes, evaluation strategies, and explanation methods.
 
-The shared handoff makes the curriculum cumulative: students inspect the data once in M1, then reuse the same prepared patient-stay table to compare questions, targets, evaluation strategies, and explanations.
+## Curriculum at a glance
 
-## Module sequence
-
-| Module | Focus | Input -> output | Notebook | Presentation |
+| Module | Focus | Watch | Notebook | Slides |
 | --- | --- | --- | --- | --- |
-| **M1** | ED exploration and preparation | Private master dataset -> cleaned handoff | [Notebook](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [View PDF](presentations/pdf/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [Download PPTX](presentations/pptx/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
-| **M2** | Emergency-department length of stay | M1 handoff -> LOS summaries and baseline models | [Notebook](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [View PDF](presentations/pdf/02_M2_ED_Length_of_Stay_Overview.pdf) · [Download PPTX](presentations/pptx/02_M2_ED_Length_of_Stay_Overview.pptx) |
-| **M3** | Critical clinical outcome | M1 handoff -> grouped classification and sampling comparison | [Notebook](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [View PDF](presentations/pdf/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [Download PPTX](presentations/pptx/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
-| **M4** | Hospitalization and explainability | M1 handoff -> calibrated evaluation, importance, and SHAP | [Notebook](notebooks/04_M4_Hospitalization_Analysis.ipynb) | [View PDF](presentations/pdf/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [Download PPTX](presentations/pptx/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
+| **M1** | ED exploration and preparation | [Recording](recordings/M1_EHR_MIMIC_IV_ED_Full_Lecture.mp4) | [Open in GitHub](notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [PDF](presentations/pdf/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pdf) · [PPTX](presentations/pptx/01_M1_EHR_MIMIC_IV_ED_Notebook_Overview.pptx) |
+| **M2** | Emergency-department length of stay | [Recording](recordings/M2_Full_Lecture.mp4) | [Open in GitHub](notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [PDF](presentations/pdf/02_M2_ED_Length_of_Stay_Overview.pdf) · [PPTX](presentations/pptx/02_M2_ED_Length_of_Stay_Overview.pptx) |
+| **M3** | Critical clinical outcome | [Recording](recordings/M3_Full_Lecture.mp4) | [Open in GitHub](notebooks/03_M3_Critical_Outcome_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [PDF](presentations/pdf/03_M3_Critical_Outcome_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/03_M3_Critical_Outcome_Analysis_Current_Evidence.pptx) |
+| **M4** | Hospitalization and explainability | [Recording](recordings/M4_Full_Lecture_Complete.mp4) | [Open in GitHub](notebooks/04_M4_Hospitalization_Analysis.ipynb) · [Colab](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) | [PDF](presentations/pdf/04_M4_Hospitalization_Analysis_Current_Evidence.pdf) · [PPTX](presentations/pptx/04_M4_Hospitalization_Analysis_Current_Evidence.pptx) |
 
-Run M1 first. M2, M3, and M4 all consume `outputs/M1_dataset_for_next_module.csv`.
+### Recommended module loop
 
-## Choose your route
+**Preview -> watch -> run -> reflect**
+
+- **Preview:** Identify the question, target, unit of observation, and expected handoff.
+- **Watch:** Use the recording to see the reasoning behind the analysis choices.
+- **Run:** Execute the notebook with authorized data and keep generated outputs private.
+- **Reflect:** Compare metrics, thresholds, limitations, and possible leakage instead of selecting a model from one score.
+
+See the [full teaching sequence](docs/teaching_sequence.md) for classroom pacing.
+
+## Assignment 2: ICU prediction project
+
+Assignment 2 is a separate applied project with its own briefing and prediction windows.
+
+- [Assignment 2 guide](docs/assignment-2.md)
+- [Briefing deck - PDF](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pdf)
+- [Briefing deck - editable PPTX](assignments/assignment-2/ICU_Prediction_Assignment_Briefing.pptx)
+- [Full assignment briefing recording](recordings/assignment-2/Assignment_2_Full_Recording.mp4)
+
+The windowed ICU CSV files are row-level clinical data and are distributed through the approved private course channel. They are intentionally not committed to this public repository.
+
+## Choose your setup route
 
 | Route | Best for | First step |
 | --- | --- | --- |
@@ -37,28 +61,13 @@ Run M1 first. M2, M3, and M4 all consume `outputs/M1_dataset_for_next_module.csv
 | **Google Colab** | Fast setup or managed compute | [Mount private Drive data](docs/colab.md) |
 | **Teaching mode** | Guided classroom discussion | [Use the sequence guide](docs/teaching_sequence.md) |
 
-### Launch a module in Google Colab
-
-| M1 | M2 | M3 | M4 |
-| --- | --- | --- | --- |
-| [![Open M1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb) | [![Open M2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/02_M2_ED_Length_of_Stay_Analysis.ipynb) | [![Open M3 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/03_M3_Critical_Outcome_Analysis.ipynb) | [![Open M4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/waziz786/MedML-toolbox/blob/main/notebooks/04_M4_Hospitalization_Analysis.ipynb) |
-
 ## Data policy
 
-The repository does not contain MIMIC-IV data, row-level derived data, credentials, or generated CSV outputs. MIMIC-IV access is credentialed and governed by PhysioNet requirements and the applicable data-use agreement. Read [docs/data_access.md](docs/data_access.md) before working with the notebooks.
+The repository does not contain MIMIC-IV data, assignment datasets, row-level derived data, credentials, or generated CSV outputs. MIMIC-IV access is credentialed and governed by PhysioNet requirements and the applicable data-use agreement. Read [data access guidance](docs/data_access.md) before working with the notebooks.
 
-Data in a user-controlled Google Colab runtime cannot be made absolutely non-downloadable. Keep the source data private, use only authorized access, and do not commit it to GitHub.
+Data in a user-controlled Google Colab runtime cannot be made absolutely non-downloadable. Keep source data private, use only authorized access, and do not commit it to GitHub.
 
-## Repository map
-
-- `notebooks/`: the four executable curriculum notebooks.
-- `presentations/pdf/`: browser-viewable PDF versions of the four teaching decks.
-- `presentations/pptx/`: original PowerPoint files for download and editing.
-- `data/`: documentation only; private data is ignored by Git.
-- `outputs/`: documentation only; generated handoffs and analysis tables are ignored by Git.
-- `docs/`: setup, data-access, Colab, and teaching-sequence guidance.
-
-## Quick start: local execution
+## Run locally
 
 1. Create an environment and install the notebook dependencies.
 
@@ -82,24 +91,25 @@ Data in a user-controlled Google Colab runtime cannot be made absolutely non-dow
    jupyter lab
    ```
 
-   Open `notebooks/01_M1_MIMIC_IV_ED_Dataset_Exploration.ipynb`, run it to completion, then run Modules 2, 3, and 4.
+The notebooks recognize `data/private/master_dataset_new.csv` for local use. That location is ignored and must be created by the student.
 
-For macOS or Linux commands, see [docs/local_setup.md](docs/local_setup.md). For Google Colab, see [docs/colab.md](docs/colab.md).
+## Repository map
 
-## Configuration
+- `notebooks/`: the four executable curriculum notebooks, with cached outputs removed.
+- `presentations/pdf/`: browser-viewable PDF versions of the four teaching decks.
+- `presentations/pptx/`: original PowerPoint files for download and editing.
+- `recordings/`: M1-M4 lecture recordings stored with Git LFS.
+- `assignments/assignment-2/`: the Assignment 2 briefing deck in PDF and PPTX form.
+- `data/`: documentation only; private data is ignored by Git.
+- `outputs/`: documentation only; generated handoffs and analysis tables are ignored by Git.
+- `docs/`: setup, data-access, assignment, recording, and teaching-sequence guidance.
 
-| Variable | Purpose | Default |
-| --- | --- | --- |
-| `MEDML_MASTER_DATASET_PATH` | Path to the private M1 master CSV | No local default; a documented private Drive fallback is checked in Colab |
-| `MEDML_OUTPUT_DIR` | Directory for the M1 handoff and generated tables | Repository `outputs/` |
+To download the large recordings after cloning:
 
-The notebooks also recognize `data/private/master_dataset_new.csv` for local use. That location is ignored and must be created by the student.
-
-## Outputs and limitations
-
-M1 creates `M1_dataset_for_next_module.csv`; downstream notebooks create module-specific summary, model, evaluation, curve, and explainability tables. These outputs can contain row-level or otherwise sensitive derived information, so they remain local and ignored. See [outputs/README.md](outputs/README.md).
-
-The notebooks are teaching artifacts, not clinical decision-support software. Results depend on the authorized dataset version, preprocessing choices, sampling, random seeds, and compute environment. Model metrics should not be interpreted as clinical validation.
+```powershell
+git lfs install
+git lfs pull
+```
 
 ## Reproducibility checks
 
