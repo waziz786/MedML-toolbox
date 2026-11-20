@@ -1,6 +1,6 @@
 # MedML Toolbox
 
-### A guided, evidence-first machine-learning curriculum for emergency-department data
+### A guided, evidence-first machine-learning curriculum for emergency-department electronic health records (EHR)
 
 [![Validate teaching artifacts](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml/badge.svg)](https://github.com/waziz786/MedML-toolbox/actions/workflows/validate.yml)
 
